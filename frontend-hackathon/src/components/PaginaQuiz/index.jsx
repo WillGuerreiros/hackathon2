@@ -1,4 +1,4 @@
-import QuestionSection from "./QuizComponents/QuestionSection"
+import QuestionSection from "./QuestionSection"
 
 export default function PaginaQuiz() {
     return (

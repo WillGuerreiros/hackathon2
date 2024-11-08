@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react"
 import { currentQuestion } from "../../../../core/CurrentQuestion.js"
-import AnswerSection from "./AnswerSection.jsx"
+import AnswerSection from "./AnswerQuestion/index.jsx"
 import VerifyAnswer from "../../../../core/VerifyAnswer.js"
 import { Divider } from "antd";
-import Score from "./Score.jsx";
+import Score from "../Score/Index.jsx";
 import { currentUser } from "../../../../core/CurrentUser.js";
 
 export default function QuestionSection(props) {
