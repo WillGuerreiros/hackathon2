@@ -42,7 +42,7 @@ export default function QuestionSection(props) {
                 <p>{currentQuestion.id}</p>
             </div>
 
-            <div className="flex flex-col gap-4 p-4">
+            <div>
                 <AnswerSection resposta={resposta1} answerSelected={VerifyAndUpdate} />
                 <AnswerSection resposta={resposta2} answerSelected={VerifyAndUpdate} />
                 <AnswerSection resposta={resposta3} answerSelected={VerifyAndUpdate} />
