@@ -10,45 +10,60 @@ import { currentUser } from "../../../../core/CurrentUser.js";
 export default function QuestionSection(props) {
 
     let [questionnow, setNewQuestion] = useState(currentQuestion.question)
-    let [resposta1, setresposta1] = useState(currentQuestion.falseAnswer1)
-    let [resposta2, setresposta2] = useState(currentQuestion.falseAnswer2)
-    let [resposta3, setresposta3] = useState(currentQuestion.falseAnswer3)
-    let [resposta4, setresposta4] = useState(currentQuestion.falseAnswer4)
-    let [resposta5, setresposta5] = useState(currentQuestion.trueAnswer)
+    let [answer1, setNewAnswer1] = useState(currentQuestion.allAnswers[0].answer)
+    let [answer2, setNewAnswer2] = useState(currentQuestion.allAnswers[1].answer)
+    let [answer3, setNewAnswer3] = useState(currentQuestion.allAnswers[2].answer)
+    let [answer4, setNewAnswer4] = useState(currentQuestion.allAnswers[3].answer)
+    let [answer5, setNewAnswer5] = useState(currentQuestion.allAnswers[4].answer)
+    let [points,setNewpoints] = useState(currentUser.score)
+    let [ods,setNewOds] = useState(currentQuestion.ods)
 
     function AtualizaTudo() {
         setNewQuestion(currentQuestion.question)
-        setresposta1(currentQuestion.falseAnswer1)
-        setresposta2(currentQuestion.falseAnswer2)
-        setresposta3(currentQuestion.falseAnswer3)
-        setresposta4(currentQuestion.falseAnswer4)
-        setresposta5(currentQuestion.trueAnswer)
+        setNewAnswer1(currentQuestion.allAnswers[0].answer)
+        setNewAnswer2(currentQuestion.allAnswers[1].answer)
+        setNewAnswer3(currentQuestion.allAnswers[2].answer)
+        setNewAnswer4(currentQuestion.allAnswers[3].answer)
+        setNewAnswer5(currentQuestion.allAnswers[4].answer)
+        setNewpoints(currentUser.score)
+        setNewOds(currentQuestion.ods)
+
     }
 
     function VerifyAndUpdate(qualResposta) {
         VerifyAnswer(qualResposta)
+        currentQuestion.novoId = currentQuestion.id + 1
         return AtualizaTudo()
     }
 
     return (
         <div>
             <div >
-                <Score pontos={currentUser.score} />
+                <Score pontos={points} />
             </div>
 
             <Divider variant="solid" >{questionnow}</Divider>
 
             <div>
-                <p>{currentQuestion.id}</p>
+                <p>{ods}</p>
             </div>
 
             <div>
-                <AnswerSection resposta={resposta1} answerSelected={VerifyAndUpdate} />
-                <AnswerSection resposta={resposta2} answerSelected={VerifyAndUpdate} />
-                <AnswerSection resposta={resposta3} answerSelected={VerifyAndUpdate} />
-                <AnswerSection resposta={resposta4} answerSelected={VerifyAndUpdate} />
-                <AnswerSection resposta={resposta5} answerSelected={VerifyAndUpdate} />
+                <AnswerSection answer={answer1} answerSelected={VerifyAndUpdate} />
             </div>
+            <div>
+                <AnswerSection answer={answer2} answerSelected={VerifyAndUpdate} />
+            </div>
+            <div>
+                <AnswerSection answer={answer3} answerSelected={VerifyAndUpdate} />
+            </div>
+            <div>
+                <AnswerSection answer={answer4} answerSelected={VerifyAndUpdate} />
+            </div>
+            <div>
+                <AnswerSection answer={answer5} answerSelected={VerifyAndUpdate} />
+            </div>
+
 
         </div>
     )

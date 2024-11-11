@@ -1,6 +1,10 @@
-import QuestionClass from "./classes/QuestionClass.js"
+import QuestionClass from "./classes/QuestionClass.js";
+import VerifyAnswer from "./VerifyAnswer.js";
 
 
 
-export let currentQuestion = new QuestionClass(1)
+export let currentQuestion = new QuestionClass(3)
+
+
+
 

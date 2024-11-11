@@ -1,137 +1,319 @@
-export const questions = [
+export const questions =
+  [
     {
       "id": 1,
-      "question": "Qual é o objetivo principal do ODS 1 - Erradicação da pobreza?",
+      "question": "Qual é o principal objetivo da ODS 1?",
+      "ods": "ODS 1",
       "false_answers": [
         {
-          "answer": "Eliminar todas as formas de desigualdade social até 2030",
-          "explanation": "Embora o ODS 1 esteja relacionado à pobreza, ele não se concentra diretamente em eliminar todas as desigualdades sociais até 2030."
+          "answer": "Garantir água limpa e saneamento para todos",
+          "explanation": "Esse é o objetivo da ODS 6, que foca em água potável e saneamento."
         },
         {
-          "answer": "Aumentar o PIB dos países em desenvolvimento",
-          "explanation": "O aumento do PIB não é o foco do ODS 1, que trata de erradicar a pobreza em todas as suas formas, e não apenas de crescimento econômico."
+          "answer": "Promover a igualdade de gênero",
+          "explanation": "Esse é o objetivo da ODS 5, que aborda a igualdade de gênero."
         },
         {
-          "answer": "Erradicar a fome em todas as regiões urbanas",
-          "explanation": "A erradicação da fome é tratada especificamente pelo ODS 2. O ODS 1 foca na erradicação da pobreza, incluindo nas áreas rurais e urbanas."
+          "answer": "Garantir educação de qualidade para todos",
+          "explanation": "Esse é o objetivo da ODS 4, focada em educação de qualidade."
         },
         {
-          "answer": "Promover o desenvolvimento de áreas industriais em países pobres",
-          "explanation": "Desenvolvimento industrial pode ajudar, mas o foco do ODS 1 é na erradicação da pobreza, garantindo direitos humanos básicos e acesso a recursos."
+          "answer": "Reduzir as desigualdades dentro dos países",
+          "explanation": "Esse é o objetivo da ODS 10, focada em redução de desigualdades."
+        },
+        {
+          "answer": "Proteger a vida marinha",
+          "explanation": "Esse é o objetivo da ODS 14, que foca na conservação dos oceanos."
         }
       ],
-      "true_answer": {
-        "answer": "Erradicar a pobreza extrema em todas as formas até 2030",
-        "explanation": "O ODS 1 busca acabar com a pobreza extrema, definida como viver com menos de US$ 1,90 por dia, e reduzir as formas mais amplas de pobreza até 2030."
-      },
-      "ods": "ODS 1 - Erradicação da Pobreza"
+      "true_answer": [
+        {
+          "answer": "Erradicar a pobreza em todas as suas formas",
+          "explanation": "A ODS 1 busca erradicar a pobreza em todas as suas formas."
+        },
+        {
+          "answer": "Assegurar proteção social para os vulneráveis",
+          "explanation": "A ODS 1 inclui proteção social para grupos vulneráveis."
+        }
+      ]
     },
     {
       "id": 2,
-      "question": "O que o ODS 4 - Educação de qualidade visa alcançar?",
+      "question": "Qual é o foco principal da ODS 7?",
+      "ods": "ODS 7",
       "false_answers": [
         {
-          "answer": "Aumentar o número de escolas privadas em países em desenvolvimento",
-          "explanation": "O foco do ODS 4 é garantir educação inclusiva e equitativa, não especificamente aumentar escolas privadas."
+          "answer": "Garantir a saúde e bem-estar para todos",
+          "explanation": "Esse é o objetivo da ODS 3, que se concentra na saúde e bem-estar."
         },
         {
-          "answer": "Ensinar apenas habilidades técnicas e vocacionais",
-          "explanation": "Embora o ensino vocacional seja importante, o ODS 4 busca uma educação completa, que também desenvolva habilidades críticas e sociais."
+          "answer": "Promover o trabalho decente e o crescimento econômico",
+          "explanation": "Esse é o objetivo da ODS 8, voltado para trabalho e economia."
         },
         {
-          "answer": "Oferecer educação superior gratuita para todos",
-          "explanation": "O ODS 4 visa garantir educação de qualidade, mas não menciona diretamente a gratuidade universal da educação superior."
+          "answer": "Assegurar acesso à educação de qualidade",
+          "explanation": "Esse é o objetivo da ODS 4, focado em educação de qualidade."
         },
         {
-          "answer": "Eliminar todas as formas de ensino a distância",
-          "explanation": "O ensino a distância pode ser uma ferramenta para a inclusão, e o ODS 4 foca na melhoria da qualidade da educação em todos os formatos."
+          "answer": "Assegurar cidades e comunidades sustentáveis",
+          "explanation": "Esse é o objetivo da ODS 11, que trata da sustentabilidade urbana."
         }
       ],
-      "true_answer": {
-        "answer": "Garantir educação inclusiva, equitativa e de qualidade para todos",
-        "explanation": "O ODS 4 busca assegurar que todas as pessoas tenham acesso à educação de qualidade, independentemente de sua situação socioeconômica."
-      },
-      "ods": "ODS 4 - Educação de Qualidade"
+      "true_answer": [
+        {
+          "answer": "Garantir acesso a energia limpa e acessível para todos",
+          "explanation": "A ODS 7 foca em garantir energia limpa e acessível para todos."
+        },
+        {
+          "answer": "Promover o aumento da eficiência energética",
+          "explanation": "A ODS 7 incentiva a eficiência energética em todos os setores."
+        },
+        {
+          "answer": "Aumentar o uso de fontes de energia renováveis",
+          "explanation": "A ODS 7 busca promover o uso de energias renováveis."
+        }
+      ]
     },
     {
       "id": 3,
-      "question": "Qual é o foco do ODS 5 - Igualdade de gênero?",
+      "question": "Qual é o principal objetivo da ODS 13?",
+      "ods": "ODS 13",
       "false_answers": [
         {
-          "answer": "Aumentar o número de mulheres no setor tecnológico",
-          "explanation": "Embora a participação das mulheres no setor tecnológico seja importante, o ODS 5 visa alcançar a igualdade de gênero em todas as esferas da sociedade."
+          "answer": "Assegurar o acesso a educação de qualidade",
+          "explanation": "Esse é o objetivo da ODS 4, focada em educação de qualidade."
         },
         {
-          "answer": "Proibir o trabalho de homens em setores tradicionalmente dominados por mulheres",
-          "explanation": "O ODS 5 visa promover a igualdade de gênero, e não criar novas divisões no mercado de trabalho."
+          "answer": "Promover o uso sustentável dos ecossistemas terrestres",
+          "explanation": "Esse é o objetivo da ODS 15, focada na vida terrestre."
         },
         {
-          "answer": "Eliminar o casamento em todas as culturas",
-          "explanation": "O objetivo não é eliminar o casamento, mas sim erradicar práticas prejudiciais, como o casamento infantil e forçado."
+          "answer": "Promover cidades e comunidades sustentáveis",
+          "explanation": "Esse é o objetivo da ODS 11, focada em cidades sustentáveis."
         },
         {
-          "answer": "Aumentar o salário das mulheres em todos os setores",
-          "explanation": "O ODS 5 promove a igualdade salarial, mas o foco é eliminar a discriminação e promover a igualdade de gênero de forma ampla."
+          "answer": "Garantir trabalho decente para todos",
+          "explanation": "Esse é o objetivo da ODS 8, voltado ao trabalho decente."
         }
       ],
-      "true_answer": {
-        "answer": "Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas",
-        "explanation": "O ODS 5 busca acabar com a discriminação de gênero e promover o empoderamento feminino em todas as áreas da vida."
-      },
-      "ods": "ODS 5 - Igualdade de Gênero"
+      "true_answer": [
+        {
+          "answer": "Tomar medidas urgentes para combater a mudança climática",
+          "explanation": "A ODS 13 foca em medidas urgentes contra a mudança climática."
+        },
+        {
+          "answer": "Promover a resiliência e adaptação climática",
+          "explanation": "A ODS 13 também se concentra em promover a resiliência e adaptação."
+        }
+      ]
     },
+
     {
       "id": 4,
-      "question": "O que o ODS 7 - Energia limpa e acessível defende?",
+      "question": "Qual é o principal objetivo da ODS 2?",
+      "ods": "ODS 2",
       "false_answers": [
         {
-          "answer": "Substituir todas as fontes de energia por energia nuclear",
-          "explanation": "O ODS 7 não foca em uma única fonte de energia, mas na diversificação e uso de fontes renováveis, como solar e eólica."
+          "answer": "Garantir saúde e bem-estar para todos",
+          "explanation": "Esse é o objetivo da ODS 3, que foca na saúde e bem-estar."
         },
         {
-          "answer": "Aumentar o uso de combustíveis fósseis em áreas industriais",
-          "explanation": "O ODS 7 defende o uso de energias renováveis, como solar e eólica, e não o aumento dos combustíveis fósseis."
+          "answer": "Promover a igualdade de gênero",
+          "explanation": "Esse é o objetivo da ODS 5, que aborda a igualdade de gênero."
         },
         {
-          "answer": "Incentivar o uso de energia a carvão em países em desenvolvimento",
-          "explanation": "O uso de carvão é uma das principais fontes de poluição, e o ODS 7 busca substituí-lo por fontes de energia mais limpas."
+          "answer": "Garantir cidades e comunidades sustentáveis",
+          "explanation": "Esse é o objetivo da ODS 11, focada em comunidades sustentáveis."
         },
         {
-          "answer": "Garantir energia ilimitada para grandes corporações",
-          "explanation": "O objetivo do ODS 7 é garantir acesso universal e sustentável à energia, com foco na acessibilidade para todos, não apenas para grandes empresas."
+          "answer": "Erradicar a pobreza em todas as suas formas",
+          "explanation": "Esse é o objetivo da ODS 1, focada em erradicação da pobreza."
         }
       ],
-      "true_answer": {
-        "answer": "Garantir acesso a energia acessível, confiável, sustentável e moderna para todos",
-        "explanation": "O ODS 7 defende o acesso universal à energia limpa, garantindo que seja sustentável e moderna para combater as mudanças climáticas."
-      },
-      "ods": "ODS 7 - Energia Limpa e Acessível"
+      "true_answer": [
+        {
+          "answer": "Acabar com a fome, alcançar a segurança alimentar",
+          "explanation": "A ODS 2 visa acabar com a fome e garantir segurança alimentar."
+        },
+        {
+          "answer": "Promover a agricultura sustentável",
+          "explanation": "A ODS 2 foca em práticas agrícolas sustentáveis."
+        }
+      ]
     },
     {
       "id": 5,
-      "question": "Qual é o principal objetivo do ODS 14 - Vida na água?",
+      "question": "Qual é o objetivo principal da ODS 4?",
+      "ods": "ODS 4",
       "false_answers": [
         {
-          "answer": "Expandir a pesca industrial em todas as regiões oceânicas",
-          "explanation": "A pesca sustentável é incentivada, mas o ODS 14 se preocupa com a preservação dos ecossistemas marinhos, e não com a expansão industrial."
+          "answer": "Erradicar a pobreza em todas as suas formas",
+          "explanation": "Esse é o objetivo da ODS 1, que foca na erradicação da pobreza."
         },
         {
-          "answer": "Eliminar a pesca artesanal",
-          "explanation": "A pesca artesanal é importante para muitas comunidades e deve ser sustentável, não eliminada."
+          "answer": "Garantir acesso a energia limpa para todos",
+          "explanation": "Esse é o objetivo da ODS 7, focada em energia limpa e acessível."
         },
         {
-          "answer": "Reduzir a quantidade de áreas protegidas nos oceanos",
-          "explanation": "O ODS 14 visa aumentar a proteção dos oceanos, não diminuir as áreas protegidas."
+          "answer": "Promover o uso sustentável dos ecossistemas marinhos",
+          "explanation": "Esse é o objetivo da ODS 14, que trata da vida marinha."
         },
         {
-          "answer": "Promover a construção de mais plataformas de petróleo em águas profundas",
-          "explanation": "O foco do ODS 14 é na preservação dos recursos marinhos e a exploração de petróleo em águas profundas representa riscos ambientais."
+          "answer": "Assegurar acesso à justiça para todos",
+          "explanation": "Esse é o objetivo da ODS 16, que foca na paz, justiça e instituições eficazes."
         }
       ],
-      "true_answer": {
-        "answer": "Conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos",
-        "explanation": "O ODS 14 busca a conservação dos ecossistemas marinhos e a promoção de práticas que garantam sua sustentabilidade para as futuras gerações."
-      },
-      "ods": "ODS 14 - Vida na Água"
+      "true_answer": [
+        {
+          "answer": "Garantir educação de qualidade inclusiva e equitativa",
+          "explanation": "A ODS 4 visa garantir uma educação inclusiva e de qualidade."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Qual das opções abaixo faz parte da ODS 4?",
+      "ods": "ODS 4",
+      "false_answers": [
+        {
+          "answer": "Erradicar a fome e garantir segurança alimentar",
+          "explanation": "Esse é o objetivo da ODS 2, focada na erradicação da fome."
+        },
+        {
+          "answer": "Proteger e restaurar ecossistemas terrestres",
+          "explanation": "Esse é o objetivo da ODS 15, que aborda a vida terrestre."
+        },
+        {
+          "answer": "Promover o acesso à energia sustentável",
+          "explanation": "Esse é o objetivo da ODS 7, relacionada à energia sustentável."
+        },
+        {
+          "answer": "Garantir o desenvolvimento industrial inclusivo",
+          "explanation": "Esse é o objetivo da ODS 9, que aborda a indústria, inovação e infraestrutura."
+        }
+      ],
+      "true_answer": [
+        {
+          "answer": "Assegurar que todos os jovens e uma parte considerável dos adultos estejam alfabetizados",
+          "explanation": "A ODS 4 inclui a alfabetização de jovens e adultos."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Qual é o principal objetivo da ODS 5?",
+      "ods": "ODS 5",
+      "false_answers": [
+        {
+          "answer": "Assegurar água limpa e saneamento para todos",
+          "explanation": "Esse é o objetivo da ODS 6, voltada para água potável e saneamento."
+        },
+        {
+          "answer": "Promover o crescimento econômico e trabalho decente",
+          "explanation": "Esse é o objetivo da ODS 8, focada no crescimento econômico e trabalho."
+        },
+        {
+          "answer": "Garantir educação de qualidade inclusiva",
+          "explanation": "Esse é o objetivo da ODS 4, relacionada à educação de qualidade."
+        },
+        {
+          "answer": "Erradicar todas as formas de pobreza",
+          "explanation": "Esse é o objetivo da ODS 1, que trata da erradicação da pobreza."
+        }
+      ],
+      "true_answer": [
+        {
+          "answer": "Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas",
+          "explanation": "A ODS 5 tem como objetivo central a igualdade de gênero."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qual é uma das metas da ODS 5?",
+      "ods": "ODS 5",
+      "false_answers": [
+        {
+          "answer": "Promover o uso sustentável dos oceanos e mares",
+          "explanation": "Esse é o objetivo da ODS 14, que foca na vida marinha."
+        },
+        {
+          "answer": "Proporcionar acesso à energia limpa e sustentável",
+          "explanation": "Esse é o objetivo da ODS 7, focada em energia sustentável."
+        },
+        {
+          "answer": "Reduzir as desigualdades entre os países",
+          "explanation": "Esse é o objetivo da ODS 10, voltado à redução de desigualdades."
+        },
+        {
+          "answer": "Garantir padrões sustentáveis de consumo e produção",
+          "explanation": "Esse é o objetivo da ODS 12, que foca em padrões sustentáveis."
+        }
+      ],
+      "true_answer": [
+        {
+          "answer": "Eliminar todas as formas de violência contra todas as mulheres e meninas",
+          "explanation": "Uma das metas da ODS 5 é eliminar a violência contra mulheres e meninas."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Qual é o foco da ODS 6?",
+      "ods": "ODS 6",
+      "false_answers": [
+        {
+          "answer": "Garantir o acesso a energia limpa e sustentável",
+          "explanation": "Esse é o objetivo da ODS 7, relacionada à energia."
+        },
+        {
+          "answer": "Promover o uso sustentável da terra e dos ecossistemas terrestres",
+          "explanation": "Esse é o objetivo da ODS 15, voltado para a vida terrestre."
+        },
+        {
+          "answer": "Alcançar a igualdade de gênero",
+          "explanation": "Esse é o objetivo da ODS 5, que aborda a igualdade de gênero."
+        },
+        {
+          "answer": "Erradicar todas as formas de pobreza",
+          "explanation": "Esse é o objetivo da ODS 1, focada em erradicar a pobreza."
+        }
+      ],
+      "true_answer": [
+        {
+          "answer": "Garantir a disponibilidade e a gestão sustentável da água e saneamento para todos",
+          "explanation": "A ODS 6 visa garantir água potável e saneamento para todos."
+        }
+      ]
+    },
+
+    {
+      "id": 10,
+      "question": "Qual é uma das metas da ODS 6?",
+      "ods": "ODS 6",
+      "false_answers": [
+        {
+          "answer": "Garantir padrões de consumo e produção sustentáveis",
+          "explanation": "Esse é o objetivo da ODS 12, que trata de consumo e produção sustentável."
+        },
+        {
+          "answer": "Promover o crescimento econômico inclusivo",
+          "explanation": "Esse é o objetivo da ODS 8, que trata do crescimento econômico."
+        },
+        {
+          "answer": "Garantir que todos os jovens estejam alfabetizados",
+          "explanation": "Esse é o objetivo da ODS 4, focada na educação de qualidade."
+        },
+        {
+          "answer": "Erradicar a fome e garantir segurança alimentar",
+          "explanation": "Esse é o objetivo da ODS 2, voltada para a erradicação da fome."
+        }
+      ],
+      "true_answer": [
+        {
+          "answer": "Melhorar a qualidade da água, reduzindo a poluição",
+          "explanation": "Uma das metas da ODS 6 é melhorar a qualidade da água, reduzindo a poluição."
+        }
+      ]
     }
-]
+  ]
