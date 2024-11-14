@@ -1,15 +1,10 @@
-import { Button } from "antd"
-import { currentQuestion } from "../../../../../core/CurrentQuestion"
-import VerifyAnswer from "../../../../../core/VerifyAnswer"
-
-
-
+import { Button } from "antd";
 
 export default function AnswerSection(props) {
    
     return (
-        <div >
-            <Button  onClick={()=>{props.answerSelected(props.answer)}}>
+        <div>
+            <Button type="primary" onClick={()=>{props.answerSelected(props.answer)}}>
                 {props.answer}
             </Button>            
         </div>

@@ -49,60 +49,6 @@
   background-color: #ccc;
 }
 
-.titulo_ods {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
-  gap: 2rem;
-}
-
-.titulo_container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-
-.titulo {
-  color: #333;
-  text-align: left;
-  font-size: 3.8rem;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
-  margin-left: 1rem;
-}
-
-.titulo_ods img {
-  width: 100%;
-  max-width: 400px;
-  animation: spin 10s linear infinite;
-  left: 5rem;
-}
-
-
-.botao_quiz {
-  font-family: var(--fonte-italiana);
-  padding: 0.8rem 2.5rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 3rem
-}
-
-.botao_quiz:hover {
-  background-color: #555;
-}
-
 .parOds {
   font-size: medium;
   color: #111111;
@@ -118,6 +64,16 @@
 
 }
 
+.tituloPgOds{
+  display: flex;
+  width: fit-content;
+  max-width: 70%;
+  --fonte-poppins: "Poppins", serif;
+  font-family: var(--fonte-poppins);
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+}
 
 .block{
   border-radius: 50%;

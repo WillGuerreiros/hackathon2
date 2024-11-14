@@ -19,7 +19,7 @@ export default function PaginaQuiz() {
         </nav>
 
         <div>
-            <QuestionSection />
+            <QuestionSection/>
         </div>
 
     </>
