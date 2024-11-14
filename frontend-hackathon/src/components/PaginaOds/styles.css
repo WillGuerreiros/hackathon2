@@ -125,7 +125,7 @@
 
 .odsSection{
   background-color: #ffffff;
-  border: #111111 solid;
+
 }
 
 @keyframes spin {
@@ -138,15 +138,14 @@
 } 
 
 #sdg-icons{
+  width: 70vw;
+  justify-self: center;
   padding: 1rem;
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
   line-height: inherit;
   font-family: Roboto,sans-serif;
   box-sizing: border-box;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e5e7eb;
   display: grid;
   gap: 1rem;
   column-gap: 1.5rem;

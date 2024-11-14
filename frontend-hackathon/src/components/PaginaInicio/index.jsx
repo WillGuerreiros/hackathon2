@@ -18,7 +18,7 @@ export default function PaginaInicio() {
       <header className='titulo_ods'>
         <div className='titulo_container'>
           <h1 className='titulo'>Objetivo de Desenvolvimento Sustentável</h1>
-          <button className='botao_quiz'>Jogar o Quiz</button>
+          <button className='botao_quiz' to="/quiz" >Jogar o Quiz</button>
         </div>
         <img src={ImagemPrincipal} alt='Imagem principal da ODS' />
       </header>

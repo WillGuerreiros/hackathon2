@@ -55,13 +55,13 @@
   justify-content: space-between;
   padding: 2rem;
   border-radius: 8px;
-  width: 90%;
-  max-width: 1000px;
+  align-self: center;
   margin: 2rem auto;
   gap: 2rem;
 }
 
 .titulo_container {
+
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -70,6 +70,8 @@
 
 
 .titulo {
+  max-width: 800px;
+
   color: #333;
   text-align: left;
   font-size: 3.8rem;
@@ -78,6 +80,7 @@
 }
 
 .titulo_ods img {
+
   width: 100%;
   max-width: 400px;
   animation: spin 10s linear infinite;
@@ -95,7 +98,7 @@
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
 .botao_quiz:hover {
