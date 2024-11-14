@@ -4,6 +4,7 @@ import PaginaCadastro from './components/PaginaCadastro';
 import PaginaLogin from './components/PaginaLogin';
 import PaginaOds from "./components/PaginaOds";
 import PaginaQuiz from "./components/PaginaQuiz";
+import './App.css';
 
 function App() {
   return (

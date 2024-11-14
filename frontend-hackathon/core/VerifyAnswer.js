@@ -7,6 +7,7 @@ export default function VerifyAnswer(answer) {
     // Procurar a explicação em false_answers
     let explanationObj = currentQuestion.falseAnswers.find(item => item.answer === answer);
     let preAnswer = "Resposta errada, pois: "
+    currentUser.addOds = currentQuestion.ods
 
     // Se não encontrar em false_answers, procurar em true_answer
     if (!explanationObj) {
@@ -16,6 +17,8 @@ export default function VerifyAnswer(answer) {
     }
 
     // Retorna a explicação se encontrar, ou uma mensagem caso não encontre
+
+
     return explanationObj ? alert(preAnswer + explanationObj.explanation ) : alert("Explicação não encontrada.");
 }
 

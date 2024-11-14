@@ -14,7 +14,7 @@
   gap: 10px;
   width: 100%;
   padding: 1rem;
-  background-color: #f7f7f7; 
+  background-color: #f7f7f7;
 }
 
 .opcoes a {
@@ -36,7 +36,7 @@
 
 .opcoes .botao_inicio:last-of-type,
 .opcoes .botao_inicio:nth-last-of-type(2) {
-  margin-left: auto ;
+  margin-left: auto;
   padding: 0.5rem 1rem;
   background-color: #e0e0e0;
   border-radius: 20px;
@@ -51,49 +51,31 @@
 
 .titulo_ods {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  border-radius: 8px;
-  align-self: center;
-  margin: 2rem auto;
-  gap: 2rem;
 }
 
 .titulo_container {
-
-  flex: 1;
+  width: auto;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
-
 
 .titulo {
-  max-width: 800px;
-
-  color: #333;
-  text-align: left;
-  font-size: 3.8rem;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
+  display: flex;
+  width: fit-content;
 }
 
-.titulo_ods img {
-
-  width: 100%;
-  max-width: 400px;
+#odsimagem {
+  width: fit-content;
   animation: spin 10s linear infinite;
-  left: 5rem;
 }
 
 
 .botao_quiz {
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
   font-family: var(--fonte-italiana);
-  padding: 0.8rem 2.5rem;
   background-color: #333;
   color: #fff;
-  border: none;
   border-radius: 20px;
   cursor: pointer;
   font-size: 1.5rem;

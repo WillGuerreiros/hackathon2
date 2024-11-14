@@ -1,9 +1,10 @@
 import QuestionClass from "./classes/QuestionClass.js";
-import VerifyAnswer from "./VerifyAnswer.js";
+import RandomNumberInt from "./RandomNumberInt.js";
 
 
 
-export let currentQuestion = new QuestionClass(3)
+
+export let currentQuestion = new QuestionClass(RandomNumberInt())
 
 
 

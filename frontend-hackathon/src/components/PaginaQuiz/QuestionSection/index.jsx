@@ -6,6 +6,8 @@ import VerifyAnswer from "../../../../core/VerifyAnswer.js"
 import { Divider } from "antd";
 import Score from "../Score/Index.jsx";
 import { currentUser } from "../../../../core/CurrentUser.js";
+import RandomNumberInt from "../../../../core/RandomNumberInt.js";
+import updateTurn from "../../../../core/UpdateTurn.js";
 
 export default function QuestionSection(props) {
 
@@ -32,7 +34,9 @@ export default function QuestionSection(props) {
 
     function VerifyAndUpdate(qualResposta) {
         VerifyAnswer(qualResposta)
-        currentQuestion.novoId = currentQuestion.id + 1
+        updateTurn()
+        currentQuestion.novoId = RandomNumberInt()
+        
         return AtualizaTudo()
     }
 
