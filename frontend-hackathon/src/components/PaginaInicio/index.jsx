@@ -15,13 +15,13 @@ export default function PaginaInicio() {
         <Link to="/login" className='botao_inicio'>Login</Link> | 
         <Link to="/cadastro" className='botao_inicio'>Cadastre-se</Link>
       </nav>
-      <header className='titulo_ods'>
+      <main className='titulo_ods'>
         <div className='titulo_container'>
           <h1 className='titulo'>Objetivo de Desenvolvimento Sustentável</h1>
-          <button className='botao_quiz' to="/quiz" >Jogar o Quiz</button>
+          <Link to="/quiz" ><button className='botao_quiz'>Ir para o Quiz</button></Link>
         </div>
         <img src={ImagemPrincipal} alt='Imagem principal da ODS' />
-      </header>
+      </main>
     </div>
   );
 }
