@@ -15,8 +15,6 @@ import './Questionstyle.css';
 
 export default function QuestionSection(props) {
 
-
-
     let [questionnow, setNewQuestion] = useState(currentQuestion.question)
     let [answer1, setNewAnswer1] = useState(currentQuestion.allAnswers[0].answer)
     let [answer2, setNewAnswer2] = useState(currentQuestion.allAnswers[1].answer)
@@ -60,11 +58,11 @@ export default function QuestionSection(props) {
                             fontSize: 40,
                             colorText: "#333",
                         },
-                        Button:{
-                            algorithm:true,
+                        Button: {
+                            algorithm: true,
                             contentFontSize: 20,
-                            paddingBlock: 30,             
-                            textTextColor:"#fff"
+                            paddingBlock: 30,
+                            textTextColor: "#fff"
                         }
                     },
                 }}
