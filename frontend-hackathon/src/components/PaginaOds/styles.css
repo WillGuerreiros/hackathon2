@@ -34,20 +34,6 @@
   margin-left: auto;
 }
 
-.opcoes .botao_inicio:last-of-type,
-.opcoes .botao_inicio:nth-last-of-type(2) {
-  margin-left: auto ;
-  padding: 0.5rem 1rem;
-  background-color: #e0e0e0;
-  border-radius: 20px;
-  color: #333;
-  font-weight: bold;
-}
-
-.opcoes .botao_inicio:last-of-type:hover,
-.opcoes .botao_inicio:nth-last-of-type(2):hover {
-  background-color: #ccc;
-}
 
 .parOds {
   font-size: medium;

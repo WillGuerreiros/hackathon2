@@ -2,7 +2,8 @@ import { Card, Avatar, Divider } from "antd";
 import { currentUser } from "../../../../core/CurrentUser";
 
 export default function Score(props) {
-    let user = currentUser.username
+    
+    let user = props.user
     let empresa = currentUser.company
     let pontos = props.pontos
 
@@ -11,7 +12,7 @@ export default function Score(props) {
 
         <Card title="Player:">
             <Card.Meta
-                avatar={<Avatar size={64} src="https://api.dicebear.com/7.x/miniavs/svg?seed=45" />}
+                avatar={<Avatar size={64} src={currentUser.avatar} />}
                 title={user}
                 description={<p>{empresa}</p>}
             />

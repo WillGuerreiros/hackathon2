@@ -5,7 +5,7 @@ import AnswerSection from "./AnswerQuestion/index.jsx"
 import VerifyAnswer from "../../../../core/VerifyAnswer.js"
 import { ConfigProvider, Divider } from "antd";
 import Score from "../Score/Index.jsx";
-import { currentUser } from "../../../../core/CurrentUser.js";
+import { currentUser, verificaUser } from "../../../../core/CurrentUser.js";
 import RandomNumberInt from "../../../../core/RandomNumberInt.js";
 import updateTurn from "../../../../core/UpdateTurn.js";
 import './Questionstyle.css';
@@ -22,7 +22,7 @@ export default function QuestionSection(props) {
     let [answer4, setNewAnswer4] = useState(currentQuestion.allAnswers[3].answer)
     let [answer5, setNewAnswer5] = useState(currentQuestion.allAnswers[4].answer)
     let [points, setNewpoints] = useState(currentUser.score)
-    let [ods, setNewOds] = useState(currentQuestion.ods)
+    let [user, setNewUser] = useState(currentUser.username)
 
     function AtualizaTudo() {
         setNewQuestion(currentQuestion.question)
@@ -32,7 +32,7 @@ export default function QuestionSection(props) {
         setNewAnswer4(currentQuestion.allAnswers[3].answer)
         setNewAnswer5(currentQuestion.allAnswers[4].answer)
         setNewpoints(currentUser.score)
-        setNewOds(currentQuestion.ods)
+        setNewUser(currentUser.username)
 
     }
 
@@ -47,7 +47,7 @@ export default function QuestionSection(props) {
     return (
         <div className="quizpage">
             <div >
-                <Score pontos={points} />
+                <Score user={user} pontos={points} />
             </div>
 
             <ConfigProvider
