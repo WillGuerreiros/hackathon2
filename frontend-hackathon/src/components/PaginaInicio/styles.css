@@ -1,5 +1,6 @@
+
 .pagina_inicio {
-  font-family: var(--fonte-italiana);
+  font-family: "--fonte-italiana";
   color: #333;
   display: flex;
   flex-direction: column;
