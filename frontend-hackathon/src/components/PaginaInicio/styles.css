@@ -1,5 +1,5 @@
 .pagina_inicio {
-  font-family: "--fonte-italiana";
+  font-family:Italiana;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -59,6 +59,7 @@
 .titulo {
   display: flex;
   width: fit-content;
+  font-family: Italiana;
 }
 
 #odsimagem {

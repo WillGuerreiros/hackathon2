@@ -5,6 +5,7 @@ import PaginaLogin from './components/PaginaLogin';
 import PaginaOds from "./components/PaginaOds";
 import PaginaQuiz from "./components/PaginaQuiz";
 import './App.css';
+import PaginaSobre from "./components/PaginaSobre";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PaginaInicio />} />
         <Route path="/ods" element={<PaginaOds />} />
-        <Route path="/sobre" element={<div>Sobre Nós - Informações sobre a equipe</div>} />
+        <Route path="/sobre" element={<PaginaSobre/>}/>
         <Route path="/quiz" element={<PaginaQuiz/>} />
         <Route path="/login" element={<PaginaLogin />} />
         <Route path="/cadastro" element={<PaginaCadastro />} />
