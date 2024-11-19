@@ -12,8 +12,6 @@ export default function PaginaOds() {
                 <Link to="/" className='botao_inicio'>Início</Link> |
                 <Link to="/ods" className='botao_inicio'>ODS</Link> |
                 <Link to="/sobre" className='botao_inicio'>Sobre Nós</Link> |
-                <Link to="/quiz" className='botao_inicio'>Quiz</Link> |
-                <Link to="/login" className='botao_inicio'>Login</Link> |
                 <Link to="/cadastro" className='botao_inicio'>Cadastre-se</Link>
             </nav>
             <h1 class="titulo"> O que são ODS?</h1>

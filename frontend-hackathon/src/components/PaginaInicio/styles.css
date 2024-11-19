@@ -1,5 +1,5 @@
 .pagina_inicio {
-  font-family: var(--fonte-italiana);
+  font-family:Italiana;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -34,8 +34,9 @@
   margin-left: auto;
 }
 
+
 .opcoes .botao_inicio:last-of-type,
-.opcoes .botao_inicio:nth-last-of-type(2) {
+.opcoes .botao_inicio:nth-last-of-type(1) {
   margin-left: auto;
   padding: 0.5rem 1rem;
   background-color: #e0e0e0;
@@ -44,10 +45,7 @@
   font-weight: bold;
 }
 
-.opcoes .botao_inicio:last-of-type:hover,
-.opcoes .botao_inicio:nth-last-of-type(2):hover {
-  background-color: #ccc;
-}
+
 
 .titulo_ods {
   display: flex;
@@ -61,6 +59,7 @@
 .titulo {
   display: flex;
   width: fit-content;
+  font-family: Italiana;
 }
 
 #odsimagem {
@@ -73,7 +72,8 @@
   text-decoration: none;
   align-content: center;
   justify-content: center;
-  font-family: var(--fonte-italiana);
+  font-weight: 900;
+  font-style: normal;
   background-color: #333;
   color: #fff;
   border-radius: 20px;
@@ -92,7 +92,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-} 
+}

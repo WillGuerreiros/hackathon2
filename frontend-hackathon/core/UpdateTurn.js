@@ -1,18 +1,16 @@
 import { currentUser } from "./CurrentUser";
 
 
-
 export default function updateTurn(){
-    let mensagem = null
     const turno = currentUser.currentTurn
-
+    let visible = false
     if (turno > 4){
-        mensagem = "Acabou os turnos"
         currentUser.setTurn = 1
+        visible = false
     }else{
-        mensagem = "ainda faltam " + (-turno+5) + " turnos"
         currentUser.setTurn = 1
+        visible = true
     }
 
-    return mensagem? alert(mensagem) : alert("SEM MENSAGEM")
+    return visible
 }

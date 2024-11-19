@@ -8,7 +8,21 @@ class UserClass {
         this.score = 0
         this.currentTurn = 0
         this.odsToStudy = []
+        this.avatar = "https://api.dicebear.com/7.x/miniavs/svg?seed=44"
     }
+
+    set avatarSet(num){
+        this.avatar = "https://api.dicebear.com/7.x/miniavs/svg?seed="+num
+    }
+    
+    set usernameSet(username){
+        this.username = username
+    }
+
+    set usercompanySet(company){
+        this.company = company
+    }
+
 
     set addScore(pontos) {
         this.score = this.score + pontos;

@@ -3,12 +3,13 @@ import { useState } from "react"
 import { currentQuestion } from "../../../../core/CurrentQuestion.js"
 import AnswerSection from "./AnswerQuestion/index.jsx"
 import VerifyAnswer from "../../../../core/VerifyAnswer.js"
-import { ConfigProvider, Divider } from "antd";
+import { ConfigProvider, Divider, Modal } from "antd";
 import Score from "../Score/Index.jsx";
-import { currentUser } from "../../../../core/CurrentUser.js";
+import { currentUser, verificaUser } from "../../../../core/CurrentUser.js";
 import RandomNumberInt from "../../../../core/RandomNumberInt.js";
 import updateTurn from "../../../../core/UpdateTurn.js";
 import './Questionstyle.css';
+import { Button } from "antd/es/radio/index.js";
 
 
 
@@ -22,7 +23,10 @@ export default function QuestionSection(props) {
     let [answer4, setNewAnswer4] = useState(currentQuestion.allAnswers[3].answer)
     let [answer5, setNewAnswer5] = useState(currentQuestion.allAnswers[4].answer)
     let [points, setNewpoints] = useState(currentUser.score)
-    let [ods, setNewOds] = useState(currentQuestion.ods)
+    let [user, setNewUser] = useState(currentUser.username)
+
+    const [showNextQuestion, setShowNextQuestion] = useState(true);
+
 
     function AtualizaTudo() {
         setNewQuestion(currentQuestion.question)
@@ -32,65 +36,96 @@ export default function QuestionSection(props) {
         setNewAnswer4(currentQuestion.allAnswers[3].answer)
         setNewAnswer5(currentQuestion.allAnswers[4].answer)
         setNewpoints(currentUser.score)
-        setNewOds(currentQuestion.ods)
+        setNewUser(currentUser.username)
+
 
     }
 
     function VerifyAndUpdate(qualResposta) {
         VerifyAnswer(qualResposta)
-        updateTurn()
         currentQuestion.novoId = RandomNumberInt()
-
+        setShowNextQuestion(updateTurn());
         return AtualizaTudo()
     }
 
+
+
+
     return (
         <div className="quizpage">
-            <div >
-                <Score pontos={points} />
-            </div>
 
-            <ConfigProvider
-                theme={{
-                    components: {
-                        Divider: {
-                            algorithm: true,
-                            fontSize: 40,
-                            colorText: "#333",
-                        },
-                        Button: {
-                            algorithm: true,
-                            contentFontSize: 20,
-                            paddingBlock: 30,
-                            textTextColor: "#fff"
-                        }
-                    },
-                }}
-            >
-                <Divider variant="solid">
-                    {questionnow}
-                </Divider>
+            {showNextQuestion && (
+                <>
+                    <div >
+                        <Score user={user} pontos={points} />
+                    </div>
+                    <ConfigProvider
+                        theme={{
+                            components: {
+                                Divider: {
+                                    algorithm: true,
+                                    fontSize: 40,
+                                    colorText: "#333",
+                                },
+                                Button: {
+                                    algorithm: true,
+                                    contentFontSize: 20,
+                                    paddingBlock: 30,
+                                    textTextColor: "#fff"
+                                }
+                            },
+                        }}
+                    >
+                        <Divider variant="solid">
+                            {questionnow}
+                        </Divider>
 
-                {
-                    //<div><p>{ods}</p></div>
-                }
-                <div>
-                    <AnswerSection answer={answer1} answerSelected={VerifyAndUpdate} />
-                </div>
-                <div>
-                    <AnswerSection answer={answer2} answerSelected={VerifyAndUpdate} />
-                </div>
-                <div>
-                    <AnswerSection answer={answer3} answerSelected={VerifyAndUpdate} />
-                </div>
-                <div>
-                    <AnswerSection answer={answer4} answerSelected={VerifyAndUpdate} />
-                </div>
-                <div>
-                    <AnswerSection answer={answer5} answerSelected={VerifyAndUpdate} />
-                </div>
 
-            </ConfigProvider>
+                        <div>
+                            <AnswerSection answer={answer1} answerSelected={VerifyAndUpdate} />
+                        </div>
+                        <div>
+                            <AnswerSection answer={answer2} answerSelected={VerifyAndUpdate} />
+                        </div>
+                        <div>
+                            <AnswerSection answer={answer3} answerSelected={VerifyAndUpdate} />
+                        </div>
+                        <div>
+                            <AnswerSection answer={answer4} answerSelected={VerifyAndUpdate} />
+                        </div>
+                        <div>
+                            <AnswerSection answer={answer5} answerSelected={VerifyAndUpdate} />
+                        </div>
+
+                    </ConfigProvider>
+
+                </>
+            )}
+
+            {!showNextQuestion && (
+                <>
+                    <div className="resultados">
+                        <h1 className="tituloResultados">VEJA COMO VOCÊ SE SAIU</h1>
+                        <div >
+                            <Score user={user} pontos={points} />
+                        </div>
+                        <div className="odsEstudar">
+                            <h2 className="tituloOdsEstudar">Ods a serem aprimoradas:</h2>
+                            {
+                            currentUser.odsToStudy.map(i=><p className="itemEstudar">{i}</p>)
+                            }.
+                        </div>
+
+                        <div className="share">
+                            <button className="btshare">Compartilhe!</button>
+                        </div>
+
+                    </div>
+
+                </>
+            )
+
+            }
         </div>
     )
 }

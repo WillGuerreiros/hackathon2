@@ -1,7 +1,21 @@
 import UserClass from "./classes/UserScoreClass.js";
 
 
-export let currentUser = new UserClass(1, "william nunes guerreiros", "hackathonCPDI")
 
-console.log(currentUser.id, currentUser.username, currentUser.company)
+
+
+export function verificaUser(){
+    const usuarioAtivo = JSON.parse(localStorage.getItem("usuarioAtivo"));
+    if (usuarioAtivo){
+        let novoUser = new UserClass(1, usuarioAtivo.primeiroNome, usuarioAtivo.nomeEmpresa)
+        return novoUser
+    }else{
+        let novoUser = new UserClass(1, "test", "testeempresa")
+        return novoUser
+    }
+}
+
+
+
+export let currentUser = verificaUser()
 

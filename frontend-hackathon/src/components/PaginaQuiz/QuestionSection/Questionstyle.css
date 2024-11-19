@@ -6,3 +6,60 @@
     align-items: center;
     gap: 2rem;
 }
+
+.resultados{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.tituloResultados{
+    font-family: Ubuntu ;
+    text-align: center;
+    width: 100%;
+    color: #333;
+}
+.odsEstudar{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+}
+.itemEstudar{
+    background-color: #3333;
+    padding: 0.5rem;
+    max-width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Ubuntu;
+    color: #333;
+
+    
+}
+.tituloOdsEstudar{
+    color: #333;
+    text-align: center;
+    width: 100%;
+    font-family: Ubuntu;
+    
+}
+.share{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.btshare{
+    background-color: #1677ff;
+    color: aliceblue;
+    font-size: x-large;
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: Ubuntu;
+}
+.btshare:hover{
+    border: #1677ff solid;
+    background-color: #bae0ff;
+    color: #333;
+}
