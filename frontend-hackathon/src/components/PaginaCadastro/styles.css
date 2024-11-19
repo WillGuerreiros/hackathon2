@@ -129,6 +129,13 @@
 
 }
 
+.datePicker{
+    border: #1677ff solid;
+    align-self: center;
+    max-width: 70%;
+    padding: 1rem;
+
+}
 /* Estilos do Modal */
 .imagem_modal {
     width: 80px;

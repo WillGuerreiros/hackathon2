@@ -8,7 +8,8 @@ import "./styles.css";
 import { Link } from 'react-router-dom';
 import { currentUser } from "../../../core/CurrentUser";
 import AvatarPicker from "./Avatarpicker";
-import { Button } from "antd";
+import { Button, DatePicker } from "antd";
+
 
 const esquemaValidacao = yup.object({
   primeiroNome: yup
@@ -33,6 +34,9 @@ const esquemaValidacao = yup.object({
     .string()
     .oneOf([yup.ref("senha")], "As senhas devem ser iguais")
     .required("Confirmar a senha é obrigatório"),
+  dataDeNascimento: yup
+    .string()
+    .required("Data de nascimento obrigatória")
 });
 
 export default function PaginaCadastro() {
@@ -96,6 +100,7 @@ export default function PaginaCadastro() {
                 { id: "celular", label: "Celular", type: "tel", placeholder: "Digite seu celular" },
                 { id: "senha", label: "Senha", type: "password", placeholder: "Digite sua senha" },
                 { id: "confirmarSenha", label: "Confirme sua Senha", type: "password", placeholder: "Confirme sua senha" },
+                { id: "dataDeNascimento", label: "Informe sua data de nascimento", type: "date", placeholder: "data.." }
               ].map((campo) => (
                 <div key={campo.id} className="formulario__campo">
                   <label htmlFor={campo.id}>{campo.label}</label>
@@ -109,6 +114,8 @@ export default function PaginaCadastro() {
                   <span className="error-message">{errors[campo.id]?.message}</span>
                 </div>
               ))}
+
+
 
               <AvatarPicker />
             </div>
