@@ -1,4 +1,22 @@
-import ImagemLogo from "../PaginaInicio/assets/ImagemLogo.png"
+import ImagemLogo from "../PaginaInicio/assets/ImagemLogo.png";
+import imagemOds1 from "./ImagemODS/SDG-1.svg";
+import imagemOds2 from "./ImagemODS/SDG-2.svg";
+import imagemOds3 from "./ImagemODS/SDG-3.svg";
+import imagemOds4 from "./ImagemODS/SDG-4.svg";
+import imagemOds5 from "./ImagemODS/SDG-5.svg";
+import imagemOds6 from "./ImagemODS/SDG-6.svg";
+import imagemOds7 from "./ImagemODS/SDG-7.svg";
+import imagemOds8 from "./ImagemODS/SDG-8.svg";
+import imagemOds9 from "./ImagemODS/SDG-9.svg";
+import imagemOds10 from "./ImagemODS/SDG-10.svg";
+import imagemOds11 from "./ImagemODS/SDG-11.svg";
+import imagemOds12 from "./ImagemODS/SDG-12.svg";
+import imagemOds13 from "./ImagemODS/SDG-13.svg";
+import imagemOds14 from "./ImagemODS/SDG-14.svg";
+import imagemOds15 from "./ImagemODS/SDG-15.svg";
+import imagemOds16 from "./ImagemODS/SDG-16.svg";
+import imagemOds17 from "./ImagemODS/SDG-17.svg";
+
 import './styles.css';
 import { Link } from 'react-router-dom';
 import { Divider, FloatButton } from "antd";
@@ -36,87 +54,87 @@ export default function PaginaOds() {
 
                 <a href="#ods1" aria-label="ERRADICAÇÃO DA POBREZA" >
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-1.svg" alt="Erradicação da pobreza" />
+                        <img src={imagemOds1} alt="Erradicação da pobreza" />
                     </figure>
                 </a>
                 <a href="#ods2" aria-label="FOME ZERO E AGRICULTURA SUSTENTÁVEL">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-2.svg" alt="Fome zero e agricultura sustentável" />
+                        <img src={imagemOds2} alt="Fome zero e agricultura sustentável" />
                     </figure>
                 </a>
                 <a href="#ods3" aria-label="SAÚDE E BEM-ESTAR">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-3.svg" alt="Saúde e Bem-Estar" />
+                        <img src={imagemOds3} alt="Saúde e Bem-Estar" />
                     </figure>
                 </a>
                 <a href="#ods4" aria-label="EDUCAÇÃO DE QUALIDADE">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-4.svg" alt="Educação de qualidade" />
+                        <img src={imagemOds4} alt="Educação de qualidade" />
                     </figure>
                 </a>
                 <a href="#ods5" aria-label="IGUALDADE DE GÊNERO">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-5.svg" alt="Igualdade de gênero" />
+                        <img src={imagemOds5} alt="Igualdade de gênero" />
                     </figure>
                 </a>
                 <a href="#ods6" aria-label="ÁGUA POTÁVEL E SANEAMENTO">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-6.svg" alt="Água potável e saneamento" />
+                        <img src={imagemOds6} alt="Água potável e saneamento" />
                     </figure>
                 </a>
                 <a href="#ods7" aria-label="ENERGIA LIMPA E ACESSÍVEL">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-7.svg" alt="Energia limpa e acessível" />
+                        <img src={imagemOds7} alt="Energia limpa e acessível" />
                     </figure>
                 </a>
                 <a href="#ods8" aria-label="TRABALHO DECENTE E CRESCIMENTO ECONÔMICO">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-8.svg" alt="Trabalho decente e crescimento econômico" />
+                        <img src={imagemOds8} alt="Trabalho decente e crescimento econômico" />
                     </figure>
                 </a>
                 <a href="#ods9" aria-label="INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-9.svg" alt="Indústria, inovação e infraestrutura" />
+                        <img src={imagemOds9} alt="Indústria, inovação e infraestrutura" />
                     </figure>
                 </a>
                 <a href="#ods10" aria-label="REDUÇÃO DAS DESIGUALDADES">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-10.svg" alt="Redução das desigualdades" />
+                        <img src={imagemOds10} alt="Redução das desigualdades" />
                     </figure>
                 </a>
                 <a href="#ods11" aria-label="CIDADES E COMUNIDADES SUSTENTÁVEIS">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-11.svg" alt="Cidades e comunidades sustentáveis" />
+                        <img src={imagemOds11} alt="Cidades e comunidades sustentáveis" />
                     </figure>
                 </a>
                 <a href="#ods12" aria-label="CONSUMO E PRODUÇÃO RESPONSÁVEIS">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-12.svg" alt="Consumo e produção responsáveis" />
+                        <img src={imagemOds12} alt="Consumo e produção responsáveis" />
                     </figure>
                 </a>
                 <a href="#ods13" aria-label="AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-13.svg" alt="Ação contra a mudança global do clima" />
+                        <img src={imagemOds13} alt="Ação contra a mudança global do clima" />
                     </figure>
                 </a>
                 <a href="#ods14" aria-label="VIDA NA ÁGUA">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-14.svg" alt="Vida na água" />
+                        <img src={imagemOds14} alt="Vida na água" />
                     </figure>
                 </a>
                 <a href="#ods15" aria-label="VIDA TERRESTRE">
                     <figure class="block" >
-                        <img src="/src/ImagemODS/SDG-15.svg" alt="Vida terrestre" />
+                        <img src={imagemOds15} alt="Vida terrestre" />
                     </figure>
                 </a>
                 <a href="#ods16" aria-label="PAZ, JUSTIÇA E INSTITUIÇÕES EFICAZES">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-16.svg" alt="Paz, Justiça e Instituições Eficazes" />
+                        <img src={imagemOds16} alt="Paz, Justiça e Instituições Eficazes" />
                     </figure>
                 </a>
                 <a href="#ods17" aria-label="PARCERIAS E MEIOS DE IMPLEMENTAÇÃO">
                     <figure class="block">
-                        <img src="/src/ImagemODS/SDG-17.svg" alt="Parcerias e meios de implementação" />
+                        <img src={imagemOds17} alt="Parcerias e meios de implementação" />
                     </figure>
                 </a>
             </div>
