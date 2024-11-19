@@ -36,9 +36,11 @@
 
 
 .parOds {
+  font-family: poppins;
   font-size: medium;
   color: #111111;
   padding: 1rem;
+ 
 
 }
 
@@ -54,8 +56,6 @@
   display: flex;
   width: fit-content;
   max-width: 70%;
-  --fonte-poppins: "Poppins", serif;
-  font-family: var(--fonte-poppins);
   color: #333;
   font-size: 3rem;
   text-align: center;
@@ -86,7 +86,7 @@
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
   line-height: inherit;
-  font-family: Roboto,sans-serif;
+  font-family: italiana-regular;
   box-sizing: border-box;
   display: grid;
   gap: 1rem;

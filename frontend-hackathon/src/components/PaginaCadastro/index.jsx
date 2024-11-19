@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import CadastroComSucesso from "./assets/cadastrosucesso.png";
 import LogoCadastro from "./assets/LogoCadastro.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -9,7 +8,7 @@ import "./styles.css";
 import { Link } from 'react-router-dom';
 import { currentUser } from "../../../core/CurrentUser";
 import AvatarPicker from "./Avatarpicker";
-
+import { Button } from "antd";
 
 const esquemaValidacao = yup.object({
   primeiroNome: yup
@@ -110,7 +109,10 @@ export default function PaginaCadastro() {
                   <span className="error-message">{errors[campo.id]?.message}</span>
                 </div>
               ))}
+
+              <AvatarPicker />
             </div>
+
 
 
             <div className="botao_cadastro_container">
@@ -124,7 +126,10 @@ export default function PaginaCadastro() {
         <div className="sobreposicao_modal">
           <div className="modal">
             <p className="frase_modal">Cadastro feito com sucesso!</p>
-            <Link onClick={fecharModal} className="botao_fechar" to="/quiz">ir para o quiz</Link>
+            <Button onClick={fecharModal} className="" type="primary">
+              <Link to="/quiz" > ir para o quiz</Link>
+            </Button>
+
           </div>
         </div>
       )}

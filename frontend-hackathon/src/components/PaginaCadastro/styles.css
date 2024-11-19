@@ -1,118 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
-
-    .formulario__cadastro{
-     background: var(--degrade-azul);
-    margin-top: 3rem;
-    font-family: var(--fonte-poppins);
-    
+.formulario__cadastro {
+    margin: 3rem;
+    font-family: "Poppins", sans-serif;
 }
+
 .container {
-    margin-left: 10rem;
-    width: 80%;
-    height: 90vh;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    padding: 2rem;
 }
 
 .form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-branca);
-    padding: 1rem;
+    border: #333 solid;
 }
 
 .imagem_logo {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 1rem;
-}
-
-.formulario {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-branca);
-    padding: 3rem;
-    
 }
 
 .titulo_formulario {
-    margin-bottom: 0.1rem;
+/**/
+}
+
+.formulario {
+
+    width: 50%;
     display: flex;
-    justify-content: space-between;
 
 }
 
-.titulo{
+
+
+.titulo {
     font-size: 30px;
-    margin-top: 5rem;
+
 }
 
-.botao_container{
-    display: flex;
-    align-items: center;
-    
+.botao_container {
 }
 
 .botao_entrar {
-    border: none;
-    background-color: royalblue;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
 }
 
 .botao_entrar:hover {
-    background-color: var(--cor-azul-escuro);
 }
 
 .botao_entrar {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-}
-
-.titulo_formulario .titulo::after {
-    content: '';
-    display: block;
-    width: 6rem;
-    height: 0.3rem;
-    background-color: var(--cor-azul-claro);
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
 }
 
 .input-group {
+    font-size: large;
+    font-family: "Poppins", sans-serif;
+    color: #333;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
+    justify-items: flex-start;
+    justify-content: center;
+    gap: 1%;
+    padding: 1rem;
+
 }
 
 .formulario__campo {
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
 
 }
 
 .formulario_campo .campo_escrita {
-    font-family: var(--fonte-poppins);
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem ;
-    border: none;
+    font-family: "Poppins", sans-serif;
+    margin: 5;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #0000001c;
-    font-size: 0.8rem;
 }
 
 .formulario_campo .campo_escrita:hover {
@@ -120,14 +84,13 @@
 }
 
 .formulario_campo .campo_escrita:focus-visible {
-    outline: 1px solid var(--cor-azul-claro);
+    outline: 1px solid #888;
 }
 
 .formulario__campo label,
 .gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
+    font-size: large;
+    font-weight: 800;
 }
 
 .formulario_campo .campo_escrita::placeholder {
@@ -135,9 +98,11 @@
 }
 
 .botao_cadastro_container {
-    /* font-family: var(--fonte-poppins);
-    background-color: var(--cor-azul-escuro);
-    cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+    font-size: xx-large;
 }
 
 .error-message {
@@ -145,91 +110,64 @@
     font-size: 0.75rem;
     margin-top: 0.2rem;
 }
-.botao_cadastro{
-    /* border-radius: 5px;
-    border: none;
-    margin-top: 2.5rem;
-    width: 100%; */
-    
 
+.botao_cadastro {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    width: 50%;
+    background-color:#1677ff;
+    cursor: pointer;
+    color: #bae0ff;
+    font-size: x-large;
+    font-weight: 900;
 }
 
 .botao_cadastro:hover {
-    background-color: var(--cor-azul-claro);
-}
-
-/* .botao_cadastrar button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-} */
-
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-    }
+    background-color:#bae0ff;
+    color: #1677ff;
 
 }
 
 /* Estilos do Modal */
 .imagem_modal {
-    width: 80px; /* Ajuste o tamanho conforme necessário */
+    width: 80px;
+    /* Ajuste o tamanho conforme necessário */
     height: auto;
     margin-bottom: 1rem;
-    border-radius: 50%; /* Opcional: torna a imagem circular */
-  }
-  
+    border-radius: 50%;
+    /* Opcional: torna a imagem circular */
+}
+
 .sobreposicao_modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .modal {
+}
+
+.modal {
     background-color: white;
-    padding: 2rem 2rem;
-    border-radius: 8px;
+    padding: 5rem;
+    border-radius: 2rem;
     text-align: center;
     position: relative;
-    width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .frase_modal {
+    width: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.frase_modal {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
-  }
-  
-  .botao_fechar {
+}
+
+.botao_fechar {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -238,8 +176,8 @@
     font-size: 2rem;
     cursor: pointer;
     color: #888;
-  }
-  
-  .botao_fechar:hover {
+}
+
+.botao_fechar:hover {
     color: red;
-  }
+}

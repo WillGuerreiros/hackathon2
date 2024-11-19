@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { currentUser } from '../../../../core/CurrentUser';
 
 export default function AvatarPicker() {
   const [avatarSeed, setAvatarSeed] = useState(''); // Seed selecionado
@@ -10,24 +11,16 @@ export default function AvatarPicker() {
     const seed = e.target.value;
     setAvatarSeed(seed);
     setPreviewUrl(`https://api.dicebear.com/9.x/miniavs/svg?seed=${seed}`);
+    currentUser.avatarSet = seed
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!avatarSeed) {
-      alert('Por favor, selecione um avatar antes de confirmar.');
-      return;
-    }
-    console.log('Avatar escolhido:', previewUrl);
-    alert(`Avatar ${avatarSeed} escolhido com sucesso!`);
-  };
-
+  
   return (
     <div>
       <h2>Escolha seu Avatar</h2>
-      <form onSubmit={handleSubmit}>
+      <form style={{color:"##000000c0", fontFamily:"#"}}>
         <label>
-          Escolha um seed para o avatar:
+          Escolha um avatar:
           <select
             value={avatarSeed}
             onChange={handleSeedChange}
@@ -50,21 +43,12 @@ export default function AvatarPicker() {
               <img
                 src={previewUrl}
                 alt={`Avatar de ${avatarSeed}`}
-                style={{ border: '1px solid #ccc', borderRadius: '10px', padding: '5px' }}
+                style={{ border: '1px solid #ccc', borderRadius: '10px', padding: '5px', width:"64px" }}
               />
+  
             </>
           )}
         </div>
-        <button
-          type="submit"
-          style={{
-            marginTop: '20px',
-            padding: '10px 15px',
-            cursor: 'pointer',
-          }}
-        >
-          Confirmar Avatar
-        </button>
       </form>
     </div>
   );
